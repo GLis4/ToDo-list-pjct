@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;trf&apos; in &apos;Util.formatarTarefa(...)&apos; to &apos;task&apos;&#x0D;&#x0A;- Original project: &apos;ToDo-list&apos;&#x0D;&#x0A;- Original element: &apos;Util.formatarTarefa(Task).trf&apos;&#x0D;&#x0A;- Renamed element: &apos;trf&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;trf&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Util.java[Util~formatarTarefa~QTask;@trf!65!72!70!72!QTask;!0!true" name="task" references="true" stamp="1642642070861" version="1.0"/>
+</session>
