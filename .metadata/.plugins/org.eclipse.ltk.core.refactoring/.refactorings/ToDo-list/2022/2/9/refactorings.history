@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;description&apos; in &apos;ManipularTask.alterTask(...)&apos; to &apos;propertyToAlter&apos;&#x0D;&#x0A;- Original project: &apos;ToDo-list&apos;&#x0D;&#x0A;- Original element: &apos;ManipularTask.alterTask(int, int, String).description&apos;&#x0D;&#x0A;- Renamed element: &apos;description&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;description&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{ManipularTask.java[ManipularTask~alterTask~I~I~QString;@description!655!672!662!672!QString;!0!true" name="propertyToAlter" references="true" stamp="1645484517505" version="1.0"/>
+</session>
