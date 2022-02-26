@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Util {
 
@@ -6,26 +7,44 @@ public class Util {
 		String formT;
 		formT =		task.id +"# Task."+
 				" \n description	: " +  task.description +
-				"\n status		: "+ devolverStatus(task) +
+				"\n status		: "+ devolverStatus(task.status) +
 				"\n priority	: "+ task.priority +
 				"\n task created in: " + task.calculateTaskAge();
 				
 		return formT;
 	}
 	
-	public static String devolverStatus(Task task ) {
-		
-		switch(task.id) {
-		
+	public static String formatarListaTsk(List<Task> tsk) {
+		String formT = "" ;
+		int id = 0;
+		for(Task task :  tsk) {
+			formT += "\n" +	 (id += 1) +"# Task."+
+					" \n description	: " +  task.description +
+					"\n status		: "+ devolverStatus(task.status) +
+					"\n priority	: "+ task.priority +
+					"\n task created in: " + task.calculateTaskAge()+
+					"\n";
+					
+					
+			
+		}
+		return formT;
+	}
+	
+	public static String devolverStatus(int status) {
+		String ret = "";
+		switch(status) {
 		case 1 : 
-			return "pending";
+			ret = "pending";
+			break;
 		case 2 :
-			return "doing";
+			ret = "doing";
+			break;
 		case 3 :
-			return "done";
-		
+			ret = "done";
+			break;
 		}
 		
-		return "empty...";
+		return ret;
 	}
 }

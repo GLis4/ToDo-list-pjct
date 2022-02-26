@@ -5,10 +5,10 @@ import java.util.Calendar;
 
 public class Task {
 
-	int id;
+	int id = 0;
 	Calendar created;
 	String description;
-	byte status;
+	int status;
 	String priority;
 
 	Task() {
@@ -33,7 +33,6 @@ public class Task {
 		for(int i = 0; i < data.length ; i++) {
 			if(data[i] != 0) diff += Math.abs(data[i]) + " " + tipo[i] + " ";
 		}
-		if(diff.isEmpty()) return "just created";
-		else return diff;
+		 return diff;
 	}
 }
