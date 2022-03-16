@@ -1,0 +1,18 @@
+
+public class TelaInicial {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void select(){
+		
+		System.out.println("Voce deseja...");
+		System.out.println();
+		System.out.println("1. Adicionar Tarefa\n" +
+						   "2. Consultar Tarefas\n" + 
+						   "3. Alterar Status\n" + 
+						   "4. Remover Tarefa");
+int op = sc.nextint();		
+	}
+}

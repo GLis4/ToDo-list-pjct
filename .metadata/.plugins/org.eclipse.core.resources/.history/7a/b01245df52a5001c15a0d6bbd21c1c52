@@ -45,6 +45,4 @@ public class ManipularTask {
 	public static void remAll(int idxRem) {
 		tskList.removeAll(tskList);
 	}
-	
-	
 }
