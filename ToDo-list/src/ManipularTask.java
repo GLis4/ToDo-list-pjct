@@ -20,16 +20,16 @@ public class ManipularTask {
 		tskList.add(tsk);
 	}
 	
-	public static void alterTask( int option, int idxAlter, String propertyToAlter) {
+	public static void alterTask( int atributoAlter, int idxAlter, String substituirAtributo) {
 		
-		switch(option) {
-		case 1 :
+		switch(atributoAlter) {
+		case 0 :
 			//description
-			tskList.get(idxAlter).description = propertyToAlter;
+			tskList.get(idxAlter).description = substituirAtributo;
 			break;
-		case 2 : 
+		case 1 : 
 			//priority
-			tskList.get(idxAlter).priority = propertyToAlter;
+			tskList.get(idxAlter).priority = substituirAtributo;
 			break;
 		}
 	}
@@ -42,7 +42,7 @@ public class ManipularTask {
 		tskList.remove(idxRem);	
 	}
 	
-	public static void remAll(int idxRem) {
+	public static void remAll() {
 		tskList.removeAll(tskList);
 	}
 	

@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class TelaInicial {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static void select(){
+
+		int op = 1;
+		while (op != 0) {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Voce deseja. . .");
+			System.out.println();
+			System.out.println( "0.Sair \n" + 
+					"1. Adicionar Tarefa\n" +
+					"2. Consultar Tarefas\n" + 
+					"3. Alterar Status\n" + 
+					"4. Remover Tarefa");
+
+			op = sc.nextInt();
+			switch(op) {
+			case 0:
+				sc.close();
+				break;
+			case 1: 
+				pedirDadosAddTarefa();
+				break;
+			case 2 : 
+				System.out.println(Util.formatarListaTsk(ManipularTask.tskList));
+				break;
+			case 3: 
+				break;
+			case 4 :
+				
+				break;
+				
+			}
+		}
+	}
+
+	public static void pedirDadosAddTarefa() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Adicionar Tarefa . . .");
+		System.out.println("descrição: ");
+		String descricao = sc.nextLine();
+		System.out.println("prioridade: (low, normal, high)");
+		ManipularTask.addTask(descricao, 0, descricao);
+		sc.close();
+		System.out.println("Tarefa adicionada com sucesso! ");
+	}
+	
+	public static void pedirDadosAlterStatus() {
+		
+		System.out.println("Deseja alterar ");
+		
+		
+	}
+}	

@@ -19,14 +19,11 @@ public class Util {
 		int id = 0;
 		for(Task task :  tsk) {
 			formT += "\n" +	 (id += 1) +"# Task."+
-					" \n description	: " +  task.description +
+					" \n descrição	: " +  task.description +
 					"\n status		: "+ devolverStatus(task.status) +
-					"\n priority	: "+ task.priority +
-					"\n task created in: " + task.calculateTaskAge()+
+					"\n prioridade	: "+ task.priority +
+					"\n tarefa criada em : " + task.calculateTaskAge()+
 					"\n";
-					
-					
-			
 		}
 		return formT;
 	}
@@ -35,13 +32,13 @@ public class Util {
 		String ret = "";
 		switch(status) {
 		case 1 : 
-			ret = "pending";
+			ret = "pendente";
 			break;
 		case 2 :
-			ret = "doing";
+			ret = "andamento";
 			break;
 		case 3 :
-			ret = "done";
+			ret = "feito";
 			break;
 		}
 		

@@ -2,3 +2,7 @@
 1647454932891	Copy compilation unit
 1647454939727	Copy compilation unit
 1647454945477	Delete elements
+1647639194889	Rename local variable 'property'
+1647639407429	Rename local variable 'option'
+1647639416464	Rename local variable 'atributoAlterar'
+1647639439941	Rename local variable 'propertyToAlter'
